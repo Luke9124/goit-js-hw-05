@@ -1,15 +1,4 @@
-// Zadanie 1: Nazwy użytkowników
-// Napisz funkcję strzałkową getUserNames(users), która przyjmuje jeden parametr users — tablicę obiektów użytkowników.
-//  Funkcja powinna zwrócić tablicę nazw wszystkich użytkowników(właściwość name) z tablicy users.
-
-//     • Zadeklarowano zmienną getUserNames;
-//     • Zmienna getUserNames przypisano funkcję strzałkową z parametrem (users);
-//     • Do iteracji po parametrze users użyto metody map();
-//     • Wywołanie funkcji z określoną tablicą użytkowników zwraca tablicę
-//      ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"];
-//     • Wywołanie funkcji z losowymi, ale poprawnymi argumentami zwraca poprawną wartość.
-
-const getUserNames = users => users.map(users => users.name);
+const getUserNames = users => users.map(user => user.name);
 
 console.log(
   getUserNames([
